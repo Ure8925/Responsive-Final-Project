@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+   background-image: url("../images/abstract.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+:root {
+  --heading-font-family: "Poppins", sans-serif;
+  --default-font-family: "Playfair ,Display", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: var(--heading-font-family);
+}
+
+img.logo {
+  height: 150px;
+  width: 150px;
+  margin: 0px 50px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  font-family: var(--default-font-family);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #daae3e;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 100ms ease-in-out;
+  pointer-events: none;
+}
+
+.container{
+  padding: 30px 60px;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  opacity: 1;
+}
+
+.myBtn {
+  padding: 10px;
+  width: 30%;
+  border-radius: 1.5rem;
+  border: none;
+  background: #daae3e;
+  font-size: 18px;
+}
+
+button:hover{
+background:#e4cc8d;
+}
+
+.myskincare{
+  font-size: 20px;
+  font-family: var(--heading-font-family);
+  color:#daae3e ;
+}
+
+
+p{
+  font-family: var(--default-font-family);
+  font-size: 20px;
+}
+
+img.image1{
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0px 50px;
+}
