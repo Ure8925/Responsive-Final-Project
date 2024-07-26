@@ -32,6 +32,12 @@ img.logo {
   cursor: pointer;
 }
 
+nav.navBar{
+  margin-top: -85px;
+  padding: 0;
+
+}
+
 nav ul {
   list-style: none;
   font-family: var(--default-font-family);
@@ -73,16 +79,22 @@ nav a:focus::after {
 }
 
 .myBtn {
-  padding: 10px;
+  padding: 15px 35px;
   width: 30%;
+  margin-top: 20px;
   border-radius: 1.5rem;
   border: none;
   background: #daae3e;
-  font-size: 18px;
 }
 
-button:hover{
-background:#e4cc8d;
+a.myBtn{
+text-decoration: none;
+color: #000;
+font-size: 18px;
+}
+
+.myBtn:hover{
+background:#6d8388;
 }
 
 .myskincare{
@@ -97,8 +109,41 @@ p{
   font-size: 20px;
 }
 
+ul li{
+  list-style: none;
+  font-size: 20px;
+  font-family: var(--default-font-family);
+}
+
+.paragraph{
+  font-size: 24px;
+  color: #daae3e;
+  font-weight: bold;
+}
+
 img.image1{
   max-width: 100%;
   max-height: 100%;
-  padding: 0px 50px;
+  padding: 0px 60px;
+}
+.hero{
+  background: #daae3e;
+  padding: 100px 20px;
+}
+
+.about{
+  position: relative;
+  bottom: -60px;
+  text-align: center;
+}
+
+.about-heading{
+  font-family:"Charm", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.aboutUs{
+  font-family:"Charm", cursive;
+  font-weight: bold;
 }
