@@ -10,6 +10,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  margin-bottom: 100px;
+  min-height: 400px;
 }
 
 :root {
@@ -127,6 +129,8 @@ img.image1{
   max-width: 100%;
   max-height: 100%;
   padding: 0px 60px;
+  margin-top: -20px;
+  position: relative;
 }
 .hero{
   background: var(--primary-color);
@@ -158,17 +162,22 @@ img.image1{
 
 .footer-container{
   text-align: center;
+  padding: 50px 30px;
+
+
 }
 
+
+
  .footer-col{
-  position: relative;
-  width: 100%;
+  position: fixed;
   background:#6d8388;
-  min-height: 40px;
-  padding: 20px 50px;
+  width: 100%;
+  bottom: 0;
   left: 0;
-  bottom: 0 ;
- }
+}
+   
+ 
 
  .search-form{
   width: 40%;
@@ -180,7 +189,7 @@ img.image1{
  }
 
  .search-bar{
-  margin: 20px;
+  margin: 15px 0;
  }
 
  .submit-input{
