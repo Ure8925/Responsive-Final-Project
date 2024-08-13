@@ -10,9 +10,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-bottom: 100px;
-  min-height: 400px;
 }
+
+.page-container{
+  position: relative;
+  min-height: 100%;
+}
+
 
 :root {
   --heading-font-family: "Poppins", sans-serif;
@@ -30,8 +34,8 @@ h6 {
 }
 
 img.logo {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   margin: 0px 50px;
   cursor: pointer;
 }
@@ -75,6 +79,7 @@ nav a::after {
 
 .container{
   padding: 30px 60px;
+  text-align: center;
 }
 
 nav a:hover::after,
@@ -86,25 +91,45 @@ nav a:focus::after {
   padding: 15px 35px;
   width: 30%;
   margin-top: 20px;
+  margin: 0 15px;
   border-radius: 1.5rem;
   border: none;
   background: #daae3e;
 }
 
+.myProducts{
+  padding: 15px 15px ;
+  width: 30% ;
+  border-radius: 1.5rem;
+  border: none;
+  background: var(--primary-color);
+  margin-top:-15px;
+
+}
+
+
+
 a.myBtn{
 text-decoration: none;
 color: #000;
-font-size: 18px;
+font-size: 22px;
+font-family: var(--default-font-family);
+
 }
+
 
 .myBtn:hover{
 background:#6d8388;
 }
 
+
 .myskincare{
   font-size: 20px;
   font-family: var(--heading-font-family);
   color:#daae3e ;
+  margin-top: 45px 0;
+  padding: 0 30px;
+  
 }
 
 
@@ -113,17 +138,34 @@ p{
   font-size: 20px;
 }
 
+
+
+img .products{
+  margin: 25px 35px;
+  padding: 0 10px;
+}
+
 ul li{
   list-style: none;
   font-size: 20px;
   font-family: var(--default-font-family);
 }
 
+
 .paragraph{
   font-size: 24px;
-  color: #daae3e;
+  color: var(--primary-color);
   font-weight: bold;
 }
+
+
+.main{
+  line-height: 1.5;
+  font-family: var(--default-font-family);
+  padding: 0 25px;
+}
+
+
 
 img.image1{
   max-width: 100%;
@@ -132,10 +174,14 @@ img.image1{
   margin-top: -20px;
   position: relative;
 }
+
+
 .hero{
   background: var(--primary-color);
   padding: 100px 20px;
 }
+
+
 
 .about{
   position: relative;
@@ -160,24 +206,38 @@ img.image1{
   overflow: hidden;
 }
 
+
 .footer-container{
-  text-align: center;
-  padding: 50px 30px;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 
  .footer-col{
-  position: fixed;
-  background:#6d8388;
-  width: 100%;
+  text-align: center;
+  position: relative; 
+   background: #6d8388;
+  width:100%;
   bottom: 0;
-  left: 0;
+  width:100%;
+  padding-bottom: 0.5rem; 
+  
 }
-   
- 
+
+.updates{
+  margin-right: 18.5%
+}
+
+.myUpdate{
+  margin-right: 18.5%;
+  padding-top: 25px ;
+}
+
+.sign-up{
+  margin-right: 18.5%;
+  padding-top: 25px;
+}
 
  .search-form{
   width: 40%;
@@ -188,16 +248,37 @@ img.image1{
   font-family: var(--default-font-family);
  }
 
+
  .search-bar{
-  margin: 15px 0;
+  margin: 25px 0;
  }
+
 
  .submit-input{
   padding: 15px 25px;
   border: none;
   border-radius: 8px;
   background-color: var(--primary-color);
+  margin: 0 10px;
   font-size: 20px;
   font-family: var(--default-font-family);
  }
+
+.submit-input:hover{
+background:#898259;
+}
+
+.social-icons{
+  color: var(--primary-color);
+  margin: 0 15px;
+  font-size: 25px;
+}
+
+.social-icons:hover{
+color: #898259;
+transition: 100ms ease-in-out;
+}
+  
+  
+ 
 

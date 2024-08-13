@@ -30,13 +30,14 @@
     </ul>
    </nav>
    </div>
-   <div class="container">
+   <div class="page-container">
+    <div class="content-wrap">
     <div class="row">
         <div class="col-6">
             <h2 class="myskincare">
             NATURAL SKINCARE
             </h2>
-            <p>
+            <p class="main">
             Welcome to URE'S GLOW, your destination for radiant,
             healthy skin that celebrates the unique beauty of melanin rich complexion.
             Imagine waking up each day to a skin that feels nourished, looks luminous,
@@ -51,20 +52,19 @@
             <img src="images/natural.jpg" class="image1 rounded">     
         </div>
 
-        <div class= "footer-container">
         <footer class="footer-col">
-            <p>Sign up for new products update and discounts</p>
-        <form class="search-bar">
-            <input type="search" placeholder="Enter your email" required class="search-form" />
-            <input type="submit" value="submit" class="submit-input" /> 
+        <form action="https://api.web3forms.com/submit" method="POST"class="search-bar">
+             <p class="updates mt-3" >Sign up for new products update and discounts</p>
+             <input type="hidden" name="access_key" value="5f7997a7-8503-473e-b632-876109c3c460">
+            <input type="search" name="email" placeholder="Enter your email" required class="search-form" />
+            <input type="submit" name="submit" value="submit" class="submit-input" /> 
         </form>
         <div class="social-links">
-
             <h4 class="mb-3">Contact Us</h4>
-            <a href="https://www.facebook.com/uresglow?"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/uresglow?" class="social-icons"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icons"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#" class="social-icons"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-icons"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
          </div>  
         </footer> 
