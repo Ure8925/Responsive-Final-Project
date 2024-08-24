@@ -17,11 +17,11 @@ body {
   min-height: 100%;
 }
 
-
 :root {
   --heading-font-family: "Poppins", sans-serif;
   --default-font-family: "Playfair ,Display", serif;
   --primary-color: #daae3e;
+  --secondary-color: #6d8388;
 }
 
 h1,
@@ -58,6 +58,12 @@ nav ul li {
   font-weight: bold;
 }
 
+
+nav li.active a {
+  color: var(--secondary-color)
+}
+
+
 nav a {
   text-decoration: none;
   color: #000000;
@@ -68,7 +74,7 @@ nav a::after {
   content: "";
   height: 2px;
   width: 100%;
-  background: #daae3e;
+  background: var(--primary-color);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -94,7 +100,7 @@ nav a:focus::after {
   margin: 0 15px;
   border-radius: 1.5rem;
   border: none;
-  background: #daae3e;
+  background: var(--primary-color);
 }
 
 .myProducts{
@@ -119,14 +125,14 @@ font-family: var(--default-font-family);
 
 
 .myBtn:hover{
-background:#6d8388;
+background:var(--secondary-color);
 }
 
 
-.myskincare{
+.mySkincare{
   font-size: 20px;
   font-family: var(--heading-font-family);
-  color:#daae3e ;
+  color:var(--primary-color);
   margin-top: 60px;
   padding: 0 30px;
   
@@ -163,6 +169,7 @@ ul li{
   line-height: 1.5;
   font-family: var(--default-font-family);
   padding: 0 25px;
+  font-size: 20px;
 }
 
 
@@ -202,9 +209,10 @@ img.image1{
 }
 
  img.products{
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   overflow: hidden;
+  
 }
 
 
@@ -218,13 +226,23 @@ img.image1{
  .footer-col{
   text-align: center;
   position: relative; 
-   background: #6d8388;
+   background: var(--secondary-color);
   width:100%;
   bottom: 0;
-  width:100%;
   padding-bottom: 0.5rem; 
   
 }
+
+.footer-content{
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.myGithub{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
 
 .updates{
   margin-right: 18.5%
@@ -298,7 +316,7 @@ transition: 100ms ease-in-out;
 
 .contact-title h2{
   font-weight: 600;
-  color: #daae3e;
+  color: var(--primary-color);
   font-size: 35px;
   margin-bottom: -10px;
 }
@@ -319,7 +337,7 @@ transition: 100ms ease-in-out;
   border: none;
   outline: none;
   padding-left: 25px;
-  color: #6d8388;
+  color: var(--secondary-color);
   border-radius: 50px;
   font-family: var(--default-font-family);
 }
@@ -331,7 +349,7 @@ transition: 100ms ease-in-out;
 }
 
 .contact-input:focus{
-  border: 2px solid #daae3e  ;
+  border: 2px solid var(--primary-color);
 }
 
 .contact-input::placeholder{
@@ -347,16 +365,106 @@ transition: 100ms ease-in-out;
   gap: 10px;
   border: none;
   border-radius: 50px;
-  background: #6d8388;
+  background: var(--secondary-color);
   color: #000 ;
   cursor: pointer;
 
 }
 
 .myContact button:hover{
-  background: #daae3e;
+  background: var(--primary-color);
   color: #fff;
 }
+
+@media(max-width:900px) {
+
+  nav ul li{
+    display: inline;
+    font-size: 15px;
+    margin: 10px;
+    position: relative;
+    top: 30px;
+    overflow-x: auto;
+  }
+
+
+   .hero-content{
+    nav ul li{
+      margin: 5px;
+    }
+   }
+
+
+  .mySkincare{
+    text-align: center;
+  }
+
+  .main{
+    text-align: center;
+  }
+  
+  
+  .skincare-content{
+    text-align: center;
+    width: 100vw;
+  }
+
+  
+
+  .myOrganic{
+    text-align: center;
+    font-size: 18px;
+  }
+
+
+  
+.homepage-btn{
+  margin-bottom: 85%;
+  text-align: center;
+}
+ 
+
+  .myBtn{
+    text-align: center;
+    padding: 10px 20px;
+    width: 10%;
+  
+  }
+
+a.myBtn{
+font-size: 15px;
+  
+}
+.contact-input{
+  width: 80vw
+}
+.contact-container{
+  margin: 0 auto;
+}
+
+.updates,.sign-up,
+.myUpdates,.update{
+  font-size: 14.5px;
+}
+
+.search-form{
+  font-size: 15px;
+}
+
+
+.contact-container{
+  margin-top: 25px;
+}
+
+
+}
+
+
+
+
+
+
+
   
   
  
